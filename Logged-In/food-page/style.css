@@ -1,0 +1,468 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+* {
+    padding : 0;
+    margin : 0;
+}
+
+:root{
+    --primary : #0ca453;
+    --secondary : #98d1a7;
+    --tertiary : #d5fadc;
+    --quaternary : #a9a6dc;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+main{
+    display: flex;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 10;
+    transition: 0.3s;
+    justify-content: space-between;
+}
+header .logo img{
+    height: 84px;
+    width: 208px;
+    margin-left: 20px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header ul li p {
+    font-weight: bold;
+    color: gray;
+    margin-top: 11px;
+    padding: 5px;
+}
+
+header ul li{
+    padding: 5px;
+    margin: 0 35px;
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+header ul li p:hover{
+    color: black;
+    transition: 0.75s;
+}
+
+.nav ul li .user{
+    display: flex;
+}
+
+header ul li .user p{
+    width: 120px;
+    color: rgba(38, 38, 38, 0.9);
+}
+.user img{
+    width: 60px;
+    margin-right: 10px;
+}
+header ul li .user p:hover{
+    color: var(--primary);
+    transition: 0.75s;
+}
+
+/* title page */
+
+.title-page {
+    margin: 0 2%;
+    padding: 120px 0 10px 0;
+}
+
+.title-page h3 {
+    width: 261px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+/* filter box */
+
+.filter-box {
+    box-shadow: 3px 0px 8px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 269px;
+    padding-left: 20px;
+    margin: 0 2%;
+}
+
+.filter-box h4{
+    width: 256.03px;
+    height: 38px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: var(--primary);
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: block;
+}
+
+.activity-box p {
+    width: 160px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.activity-box-detail {
+    width: 246px;
+    height: 120px;
+}
+
+.rating-box {
+    width: 256.03px;
+    border-style: solid;
+    border-width: 4px 0px 4px 0px;
+    border-color: var(--primary);
+    padding: 10px 0 0 0;
+}
+
+.rating-box p {
+    width: 160px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.rating-box-detail {
+    width: 246px;
+    height: 40px;
+}
+
+.destination-category-box {
+    padding-top: 10px;
+}
+
+.destination-category-box p {
+    width: 190px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.destination-category-box-detail  {
+    width: 215px;
+    height: 55px;
+}
+
+.category-box-detail  {
+    width: 215px;
+    height: 90px;
+}
+
+.category-box {
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 4px 0px 0px 0px;
+    border-color: var(--primary);
+}
+
+.category-box p {
+    width: 190px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.category-box-detail {
+    width: 215px;
+    height: 145px;
+}
+
+.left{
+    position: fixed;
+    margin-left: 27px;
+    padding-right: 9px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.left::-webkit-scrollbar{
+    display: none;
+}
+
+.container input:checked{
+    accent-color: #0CA453;
+}
+
+/* search box */
+
+.search-filter{
+    position: fixed;
+    display: flex;
+    background: white;
+    padding: 180px 100% 20px 0;
+    z-index: 9;
+}
+
+.right{
+    margin-left: 400px;
+}
+
+.search{
+    width: 484px;
+    height: 48px;
+    font-size: 20px;
+    padding: 0 15px;
+    display: flex;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 13px;
+}
+
+.search::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.filter {
+    position: absolute;
+    width : 290px; 
+    margin : 0 26px 0 525px; 
+}
+
+.filter #Opsi{
+    width: 100%;
+    height: 48px;
+    background: white;
+    border: none;
+    border: 2px solid #2C2C2C;
+    border-radius: 13px;
+}
+
+.filter select{
+    font-size: 16px;
+    padding-left: 18px;
+}
+
+.slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+.slide li {
+    padding : 10px 30px;
+}
+
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}    
+
+#touch:checked + .slide {
+    height: 100px;
+} 
+
+/* card box */
+
+.tour-recomendation-title, .tour-destination-recomendation-box,
+.food-recomendation-title, .food-destination-recomendation-box{
+    margin: 270px 10px;
+}
+
+.tour-recomendation-title,
+.food-recomendation-title{
+    padding-top: 40px;
+}
+
+.tour-recomendation-title h1,
+.food-recomendation-title h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    padding: 50px 0;
+}
+
+.food-recomendation-title h1{
+    color: black;
+}
+
+.tour-destination-recomendation-box,
+.food-destination-recomendation-box{
+    display: block;
+    padding-bottom: 10px;
+}
+
+.tour-recomendation-box,
+.food-recomendation-box{
+    display: block;
+    position: relative;
+    float: left;
+    width: 380px;
+    height: 526px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 50px 50px 0;
+}
+
+.tour-recomendation-box-detail,
+.food-recomendation-box-detail {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-recomendation-box-detail h3,
+.food-recomendation-box-detail h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2C2C2C;
+    margin-bottom: 10px;
+}
+
+.tour-recomendation-box-detail p,
+.food-recomendation-box-detail p {
+    width: 290px;
+}
+
+.tour-recomendation-box-detail .location,
+.food-recomendation-box-detail .location {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0CA453;
+    margin-bottom: 10px;
+}
+
+.tour-recomendation-box-detail .description,
+.food-recomendation-box-detail .description {
+    margin-right: 10px;
+    width: auto;
+    height: 150px;
+    text-align: justify;
+}
+
+.wrapper .tour-destination-recomendation-box,
+.wrapper .food-destination-recomendation-box{
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.detail {
+    border: 2px solid #0ca453;
+    border-radius:  10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0CA453;
+    padding: 5px 24px;
+    text-decoration: none;
+}
+
+.tour-recomendation-box-detail-bottom .detail,
+.food-recomendation-box-detail-bottom .detail{
+    margin-left: 40px;
+}
+
+.recomendation-box-detail-bottom .detail{
+    margin-left: 40px;
+}
+
+.detail:hover{
+    background-color: #0CA453;
+    color: white;
+    transition: 0.75s;
+}
+
+.tour-recomendation-box-detail-bottom-rating p,
+.food-recomendation-box-detail-bottom-rating p{
+    font-size: 16px;
+    margin: 5px 0 0 10px;
+    width: 130px;
+}
+
+.recomendation-box-detail-bottom-rating p{
+    width: 60px;
+}
+
+.sr-only {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    margin: -1px;
+    display: flex;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.container-favorite {
+    display: flex;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+.container-favorite fieldset {
+    border: none;
+    text-align: center;
+}
+.container-favorite label {
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-shadow: -1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+}
+.container-favorite [type=checkbox]:checked + label {
+    color: red;
+}

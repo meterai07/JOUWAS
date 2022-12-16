@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouwas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../../img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../../img/jouwas-logo.png" alt="logo"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html#thumbnail"><p>Beranda</p></a></li>
+                    <li><a href="../index.html#recomendation"><p>Rekomendasi</p></a></li>
+                    <li><a href="../index.html#wisata"><p>Wisata</p></a></li>
+                    <li><a href="../index.html#kuliner"><p>Kuliner</p></a></li>
+                    <li>
+                        <div class="user-Logged-In">
+                            <a href="../user-detail/index.html" class="user">
+                                <img src="../../img/user-logged-in.svg">
+                                <p>Hanif Darmaji</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <div class="title-page">
+                <h3>Destinasi Wisata</h3>
+            </div>
+            <div class="filter-box">
+                <h4>Filter</h4>
+                <div class="activity-box">
+                    <p>Jenis Kegiatan</p>
+                    <div class="activity-box-detail">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Tur gunung & berkemah
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Wisata alam & margasatwa
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Pantai
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Tur adrenalin & ekstrem
+                        </label>
+                    </div>
+                </div>
+                <div class="rating-box">
+                    <p>Peringkat</p>
+                    <div class="rating-box-detail">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            ⭐⭐⭐⭐⭐ke atas
+                        </label>
+                    </div>
+                </div>
+                <div class="destination-category-box">
+                    <p>Kategori Destinasi</p>
+                    <div class="destination-category-box-detail">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Terbaru
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Ekonomis
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Masuk gratis
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Cocok untuk grup besar
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search-filter">
+                <div class="search-box">
+                    <form class="search-form">
+                        <input class="search" type="search" placeholder="&#61442; ex : Gunung Bromo" name="search" required>
+                    </form>
+                </div>
+                <div class="filter">
+                    <select name="Opsi" id="Opsi" required>
+                        <option value="" disabled selected hidden><span>Pilih Opsi</span></option>
+                        <option value="Wisatawan">Favorit Wisatawan</option>
+                        <option value="Peringkat">Peringkat Wisatawan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tour-destination-recomendation-box">
+                <div class="tour-recomendation-box">
+                    <img src="../../img/wisata1.svg">
+                    <div class="container-favorite">
+                        <fieldset>
+                            <input type="checkbox" id="like1" class="sr-only">
+                            <label for="like1" aria-hidden="true">❤</label>  
+                        </fieldset>
+                    </div>
+                    <div class="tour-recomendation-box-detail">
+                        <h3>San Terra de Lafonte</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Wisatawan dapat menikmati panorama aneka jenis bunga yang tentunya cocok digunakan sebagai latar foto ...</p>
+                        <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.7 (91 Review)</p>
+                            </div>
+                            <a href="../tour-details-page/index.html" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-recomendation-box">
+                    <img src="../../img/wisata2.svg">
+                    <div class="container-favorite">
+                        <fieldset>
+                            <input type="checkbox" id="like2" class="sr-only">
+                            <label for="like2" aria-hidden="true">❤</label>  
+                        </fieldset>
+                    </div>
+                    <div class="tour-recomendation-box-detail">
+                        <h3>Pantai Parang Dowo</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Tempat wisata berupa pantai yang memiliki batu karang yang dapat berubah-ubah warnanya ...</p>
+                        <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.7 (85 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-recomendation-box">
+                    <img src="../../img/wisata3.svg">
+                    <div class="container-favorite">
+                        <fieldset>
+                            <input type="checkbox" id="like3" class="sr-only">
+                            <label for="like3" aria-hidden="true">❤</label>  
+                        </fieldset>
+                    </div>
+                    <div class="tour-recomendation-box-detail">
+                        <h3>Malang Night Paradise</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Terdapat beragam hiburan di tempat ini, antara lain yaitu Taman Dinosaurus, Taman Lampion, ...</p>
+                        <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.7 (70 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-recomendation-box">
+                    <img src="../../img/wisata4.svg">
+                    <div class="container-favorite">
+                        <fieldset>
+                            <input type="checkbox" id="like4" class="sr-only">
+                            <label for="like4" aria-hidden="true">❤</label>  
+                        </fieldset>
+                    </div>
+                    <div class="tour-recomendation-box-detail">
+                        <h3>Taman Langit Gunung Banyak</h3>
+                        <p class="location">Kota Batu, Jawa Timur</p>
+                        <p class="description">Tempat wisata ini punya konsep menarik, yakni terkait tujuh cahaya cakra manusia, ...</p>
+                        <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.9 (81 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-recomendation-box">
+                    <img src="../../img/wisata5.svg">
+                    <div class="container-favorite">
+                        <fieldset>
+                            <input type="checkbox" id="like5" class="sr-only">
+                            <label for="like5" aria-hidden="true">❤</label>  
+                        </fieldset>
+                    </div>
+                    <div class="tour-recomendation-box-detail">
+                        <h3>Wisata Alam Brakseng</h3>
+                        <p class="location">Kota Batu, Jawa Timur</p>
+                        <p class="description">Selain menawarkan tempat foto dengan latar Instagramable, di tempat ini pengunjung juga dapat bersantai ...</p>
+                        <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.8 (80 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-recomendation-box">
+                    <img src="../../img/wisata6.svg" style="width: 100%;">
+                    <div class="container-favorite">
+                        <fieldset>
+                            <input type="checkbox" id="like6" class="sr-only">
+                            <label for="like6" aria-hidden="true">❤</label>  
+                        </fieldset>
+                    </div>
+                    <div class="tour-recomendation-box-detail">
+                        <h3>Kampung Warna-Warni</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Tempat wisata ini merupakan salah satu wisata iconic di Kota Malang dan juga dapat digunakan sebagai salah satu spot foto yang menarik ...</p>
+                        <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.7 (80 Review)</p>
+                            </div>
+                            <a href="../tour-details-page/index.html" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

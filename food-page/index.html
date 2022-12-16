@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouwas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/jouwas-logo.png" alt="logo"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html#thumbnail">Beranda</a></li>
+                    <li><a href="../index.html#recomendation">Rekomendasi</a></li>
+                    <li><a href="../index.html#wisata">Wisata</a></li>
+                    <li><a href="../index.html#kuliner">Kuliner</a></li>
+                    <li><a href="../login/login.html" class="masuk">Masuk</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <div class="title-page">
+                <h3>Destinasi Kuliner</h3>
+            </div>
+            <div class="filter-box">
+                <h4>Filter</h4>
+                <div class="activity-box">
+                    <p>Jenis Tempat</p>
+                    <div class="activity-box-detail">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Restaurant
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Cafe
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Bakeries
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Hanya untuk pengiriman
+                        </label>
+                    </div>
+                </div>
+                <div class="rating-box">
+                    <p>Peringkat</p>
+                    <div class="rating-box-detail">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            ⭐⭐⭐⭐⭐ke atas
+                        </label>
+                    </div>
+                </div>
+                <div class="destination-category-box">
+                    <p>Fasilitas</p>
+                    <div class="destination-category-box-detail">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Reservasi
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Menerima kartu kredit
+                        </label>
+                    </div>
+                </div>
+                <div class="category-box">
+                    <p>Kategori Tempat</p>
+                    <div class="category-box-detail">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Terbaru
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Ekonomis
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Mewah
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Pribadi & romantis
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Cocok untuk grup besar
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search-filter">
+                <div class="search-box">
+                    <form class="search-form">
+                        <input class="search" type="search" placeholder="&#61442; ex : Ronde Titoni" name="search" required>
+                    </form>
+                </div>
+                <div class="filter">
+                    <select name="Opsi" id="Opsi" required>
+                        <option value="" disabled selected hidden>Pilih Opsi</option>
+                        <option value="Wisatawan">Favorit Wisatawan</option>
+                        <option value="Peringkat">Peringkat Wisatawan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="food-destination-recomendation-box">
+                <div class="food-recomendation-box">
+                    <img src="../img/food1.svg">
+                    <div class="food-recomendation-box-detail">
+                        <h3>Pecel Kawi</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Pecel Kawi buka pertama kali pada tahun 1975. Kedai ini terus menyajikan hidangan pecel yang autentik ...</p>
+                        <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.6 (90 Review)</p>
+                            </div>
+                            <a href="../food-details-page/index.html" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-recomendation-box">
+                    <img src="../img/food2.svg">
+                    <div class="food-recomendation-box-detail">
+                        <h3>Ronde Titoni</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Kedai yang menyajikan aneka ronde dan juga angsle ini telah dibuka sejak tahun 1948 dan terus bertahan ...</p>
+                        <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.8 (70 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-recomendation-box">
+                    <img src="../img/food3.svg">
+                    <div class="food-recomendation-box-detail">
+                        <h3>Pos Ketan Legenda 1967</h3>
+                        <p class="location">Kota Batu, Jawa Timur</p>
+                        <p class="description">Dibuka pertama kali tahun 1967, kedai ini menjual aneka olahan ketan yang cukup laris di kalangan wisatawan ...</p>
+                        <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.8 (87 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-recomendation-box">
+                    <img src="../img/food4.svg">
+                    <div class="food-recomendation-box-detail">
+                        <h3>Sego Resek</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Nasi ini berisi banyak isian seperti kecambah, kubis, daun bawang, dan juga topping nikmat lainnya ...</p>
+                        <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.8 (80 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-recomendation-box">
+                    <img src="../img/food5.svg">
+                    <div class="food-recomendation-box-detail">
+                        <h3>Rawon Nguling</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Daging yang menjadi isian dari rawon ini memiliki tekstur yang empuk dan nikmat ...</p>
+                        <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.7 (68 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-recomendation-box">
+                    <img src="../img/food6.svg" style="width: 100%; border-radius: 13px 13px 0px 0px;">
+                    <div class="food-recomendation-box-detail">
+                        <h3>Bakso Bakar Pahlawan Trip</h3>
+                        <p class="location">Kota Malang, Jawa Timur</p>
+                        <p class="description">Selain menawarkan kelezatan bakso bakarnya, usaha kuliner ini juga menawarkan varian bakso kuah beserta side dish lainnya ...</p>
+                        <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                            <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                <img src="../img/star.svg" style="height: 30px;">
+                                <p class="rating">4.7 (70 Review)</p>
+                            </div>
+                            <a href="#" class="detail">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

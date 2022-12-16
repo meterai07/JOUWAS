@@ -1,0 +1,590 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+* {
+    padding : 0;
+    margin : 0;
+}
+
+:root{
+    --primary : #0ca453;
+    --secondary : #98d1a7;
+    --tertiary : #d5fadc;
+    --quaternary : #a9a6dc;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+main{
+    display: flex;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 10;
+    transition: 0.3s;
+    justify-content: space-between;
+}
+header .logo img{
+    height: 84px;
+    width: 208px;
+    margin-left: 20px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header ul li p {
+    font-weight: bold;
+    color: gray;
+    margin-top: 11px;
+    padding: 5px;
+}
+
+header ul li{
+    padding: 5px;
+    margin: 0 35px;
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+header ul li p:hover{
+    color: black;
+    transition: 0.75s;
+}
+
+.nav ul li .user{
+    display: flex;
+}
+
+header ul li .user p{
+    width: 120px;
+    color: rgba(38, 38, 38, 0.9);
+}
+.user img{
+    width: 60px;
+    margin-right: 10px;
+}
+header ul li .user p:hover{
+    color: var(--primary);
+    transition: 0.75s;
+}
+
+/* Profil */
+
+.profil-picture{
+    width: 100%;
+    position: relative;
+    padding-top: 90px;
+}
+.user-cover{
+    position: absolute;
+    background-image: url(../../img/user-cover.svg);
+    height: 185px;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.profil-picture img{ 
+    display: block;
+    margin: 120px auto 0 auto;
+    width: 130px;
+    border: 7px solid #FFFFFF;
+    border-radius: 309.5px;
+}
+
+.profil-text{
+    text-align: center;
+    margin: 5px auto;
+}
+.profil-text h1{
+    font-size: 28px;
+    color: #262626;
+}
+.profil-text h1 span{
+    font-size: 28px;
+    color: #0CA453;;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.profil-text p a{
+    font-size: 16px;
+    color: #0CA453;
+    text-decoration: none;
+}
+
+/* button */
+
+.button{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.button a{
+    text-decoration: none;
+}
+.button .button-logOut{
+    text-align: center;
+    color: #FFFFFF;
+    background: #ED3838;
+    border-radius: 11px;
+    padding: 15px 58px;
+    font-size: 20px;
+}
+.button .button-share{
+    text-align: center;
+    color: #262626;
+    background: #FFFFFF;
+    border: 2px solid #262626;
+    border-radius: 11px;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+.button .button-logOut:hover{
+    background: #CA2929;
+    transition: 0.75s;
+}
+.button .button-share:hover{
+    background: rgba(217, 217, 217, 0.5);
+    transition: 0.75s;
+}
+
+/* recomendation */
+
+.recomendation {
+    background-image: url(../img/rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.recomendation-title, .destination-recomendation-box{
+    margin: 0 10%;
+}
+
+.recomendation-title{
+    padding: 40px 0 10px 0;
+    margin-bottom: 30px;
+    width: 250px;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: var(--primary);
+}
+
+.destination-recomendation-box{
+    display: flex; 
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 80px;
+}
+
+.recomendation-title h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #262626;
+}
+
+.recomendation-title p{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.recomendation-box{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.recomendation-box-detail {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recomendation-box-detail h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2C2C2C;
+    margin-bottom: 10px;
+}
+
+.recomendation-box-detail p {
+    width: 290px;
+}
+
+.recomendation-box-detail .location {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0CA453;
+    margin-bottom: 10px;
+}
+
+.recomendation-box-detail .description {
+    width: auto;
+    height: 150px;
+}
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+    background: #f2f2f2;
+}
+.wrapper i:first-child{
+    left: -22px;
+    display: none;
+}
+.wrapper i:last-child{
+    right: -22px;
+}
+
+.wrapper .destination-recomendation-box{
+    cursor: pointer;
+    overflow: hidden;
+}
+.destination-recomendation-box.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging .recomendation-box{
+    pointer-events: none;
+}
+.carousel .recomendation-box{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+.carousel .recomendation-box:first-child{
+    margin-left: 0px;
+}
+
+/* tour recomendation & food recomendation */
+
+.tour-recomendation-title, .tour-destination-recomendation-box,
+.food-recomendation-title, .food-destination-recomendation-box{
+    margin: 0 10%;
+}
+
+.tour-recomendation-title,
+.food-recomendation-title{
+    padding-top: 40px;
+}
+
+.tour-recomendation-title h1,
+.food-recomendation-title h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    padding: 50px 0;
+}
+
+.food-recomendation-title h1{
+    color: black;
+}
+
+.tour-destination-recomendation-box,
+.food-destination-recomendation-box{
+    display: flex; 
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.tour-recomendation-box,
+.food-recomendation-box{
+    position: relative;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tour-recomendation-box-detail,
+.food-recomendation-box-detail {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-recomendation-box-detail h3,
+.food-recomendation-box-detail h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2C2C2C;
+    margin-bottom: 10px;
+}
+
+.tour-recomendation-box-detail p,
+.food-recomendation-box-detail p {
+    width: 290px;
+}
+
+.tour-recomendation-box-detail .location,
+.food-recomendation-box-detail .location {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0CA453;
+    margin-bottom: 10px;
+}
+
+.tour-recomendation-box-detail .description,
+.food-recomendation-box-detail .description {
+    margin-right: 10px;
+    width: auto;
+    height: 150px;
+    text-align: justify;
+}
+
+.wrapper .tour-destination-recomendation-box,
+.wrapper .food-destination-recomendation-box{
+    cursor: pointer;
+    overflow: hidden;
+}
+.tour-destination-recomendation-box.dragging,
+.food-destination-recomendation-box.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging .tour-recomendation-box,
+.carousel .dragging .food-recomendation-box{
+    pointer-events: none;
+}
+.carousel .tour-recomendation-box,
+.carousel .food-recomendation-box{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+.carousel .tour-recomendation-box:first-child,
+.carousel .food-recomendation-box:first-child{
+    margin-left: 0px;
+}
+
+/* detail button */
+
+.detail {
+    border: 2px solid #0ca453;
+    border-radius:  10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0CA453;
+    padding: 5px 24px;
+    text-decoration: none;
+}
+
+.tour-recomendation-box-detail-bottom .detail,
+.food-recomendation-box-detail-bottom .detail{
+    margin-left: 40px;
+}
+
+.recomendation-box-detail-bottom .detail{
+    margin-left: 40px;
+}
+
+.detail:hover{
+    background-color: #0CA453;
+    color: white;
+    transition: 0.75s;
+}
+
+.tour-recomendation-box-detail-bottom-rating p,
+.food-recomendation-box-detail-bottom-rating p{
+    font-size: 16px;
+    margin: 5px 0 0 10px;
+    width: 130px;
+}
+
+.recomendation-box-detail-bottom-rating p{
+    width: 60px;
+}
+
+.more{
+    background: #FFFFFF;
+    border: 2px solid #0CA453;
+    border-radius: 13px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 2px 0px;
+    margin: 40px auto;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0CA453;
+    text-decoration: none;
+    font-style: none;
+}
+
+.more:hover{
+    background: #0CA453;
+    color: white;
+    transition: 0.75s;
+}
+.sr-only {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    margin: -1px;
+    display: flex;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.container-favorite {
+    display: flex;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+.container-favorite fieldset {
+    border: none;
+    text-align: center;
+}
+.container-favorite label {
+    background-color: transparent;
+    color: red;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-shadow: -1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+}
+.container-favorite [type=checkbox]:checked + label {
+    color: white;
+}
+
+/* footer */
+
+.footer1{
+    display: flex;
+    height: 210px;
+    background: #D5FADC;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    padding: 0px 140px;
+}
+
+.foto-footer {
+    width: 351px;
+    height: 210px;
+}
+
+.logo-footer{
+    width: 237px;
+    padding: 0px 57px;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-beatiful {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beautiful1{
+    width: 100px;
+}
+.beautiful2{
+    width: 105px;
+}
+.beautiful3{
+    width: 118px;
+}
+.footer1 h5{
+    font-size: 24px;
+    color: #2C2C2C;
+    margin-bottom: 10px;
+}
+
+.box-information {
+    display: flex;
+    margin-top: 30px;
+}
+
+.box-information-detail-1 {
+    margin-right: 150px;
+}
+
+.box-information ul{
+    list-style: none;
+}
+.box-information ul li a{
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(38, 38, 38, 0.5);
+    margin-bottom: 2px;
+}
+.box-information ul li :hover{
+    color: #2C2C2C;
+    transition: 0.75s;
+}
+.box-information p{
+    width: 204.75px;
+    font-size: 14px;
+    text-align: justify;
+    color: rgba(38, 38, 38, 0.5);
+}
+
+.box-information a{
+    text-decoration: none;
+    color: rgba(38, 38, 38, 0.5);
+}
+.footer2{
+    width: 100%;
+    height: 60px;
+    background: #0CA453;
+}
+.footer2 p{
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 20px;
+}

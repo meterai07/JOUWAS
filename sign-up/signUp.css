@@ -1,0 +1,151 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    width: 744px;
+}
+
+a{
+    text-decoration: none;
+}
+.samping{
+    position: absolute;
+    height: 100%;
+    width: 622px;
+    top: 0;
+    right: 0;
+}
+
+.logo img{
+    width: 218.4px;
+    height: 84px;
+    margin-left: 22px;
+}
+
+.text h1{
+    font-size: 38px;
+    line-height: 57px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.text p{
+    font-size: 20px;
+    text-align: center;
+    color: #0BA452;
+    margin-top: 7px;
+}
+
+.textBox{
+    margin-left: 145px;
+    margin-top: 20px;
+}
+.textBox p{
+    font-size: 20px;
+    color: #2C2C2C;
+}
+input[type=text], input[type=password] {
+    width: 401px;
+    padding: 8px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1.5px solid #2C2C2C;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.buttonBox{
+    margin-left: 145px;
+    margin-top: 35px;
+}
+.Masuk{
+    background: #0CA453;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 401px;
+    padding: 8px 20px;
+}
+.Masuk p{
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Masuk:hover {
+    background-color: #078140;
+    transition: 0.75s;
+}
+
+.withGoogle{
+    margin-top: 25px;
+    background: #FFFFFF;
+    border: 1.5px solid #2C2C2C;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 401px;
+    padding: 8px 20px;
+    display: flex;
+}
+
+.withGoogle:hover {
+    background-color: #D9D9D9;
+    transition: 0.75s;
+}
+
+.withGoogle p{
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    color: rgba(38, 38, 38, 0.7);
+    margin-top: 2px;
+}
+.withGoogle img{
+    width: 20px;
+    height: 20px;
+    margin: 5px 10px 5px 90px;
+}
+
+.dontHave{
+    font-size: 15px;
+    text-align: center;
+    color: rgba(44, 44, 44, 0.5);
+    margin-top: 8px;
+}
+.dontHave a{
+    color: rgba(12, 164, 83, 0.7);
+    text-decoration-line: underline;
+}
+
+.dontHave a:hover{
+    color: #0CA453;
+    transition: 0.75s;
+}
+
+footer{
+    width: 744px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    color: rgba(44, 44, 44, 0.5);
+    margin: 75px auto 0 auto;  
+}
+footer img{
+    width: 24px;
+    margin-right: 5px;
+}
+footer p{
+    margin-top: 2px;
+}

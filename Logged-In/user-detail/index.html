@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jouwas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="../../img/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../../img/jouwas-logo.png" alt="logo"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html#thumbnail"><p>Beranda</p></a></li>
+                    <li><a href="../index.html#recomendation"><p>Rekomendasi</p></a></li>
+                    <li><a href="../index.html#wisata"><p>Wisata</p></a></li>
+                    <li><a href="../index.html#kuliner"><p>Kuliner</p></a></li>
+                    <li>
+                        <div class="user-Logged-In">
+                            <a href="../user-detail/index.html" class="user">
+                                <img src="../../img/user-logged-in.svg">
+                                <p>Hanif Darmaji</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="profil-picture">
+            <div class="user-cover"></div>
+            <img src="../../img/user-logged-in.svg">
+        </div>
+        <div class="profil-text">
+            <h1>Hanif Darmaji<span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></h1>
+            <p><a href="mailto:hanifdar03@gmail.com">hanifdar03@gmail.com</a></p>
+        </div>
+        <div class="button">
+            <a href="../../index.html" class="button-logOut"><i class="fa fa-sign-out" aria-hidden="true" style="margin-right: 10px;"></i>Keluar</a>
+            <a href="#" class="button-share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+        </div>
+        <div class="tour-favourite">
+            <div class="recomendation-title">
+                <h1>Wisata Favorit</h1>
+            </div>
+            <div class="wrapper">
+                <div class="destination-recomendation-box">
+                    <div class="tour-recomendation-box">
+                        <img src="../../img/wisata1.svg">
+                        <div class="container-favorite">
+                            <fieldset>
+                                <input type="checkbox" id="like1" class="sr-only">
+                                <label for="like1" aria-hidden="true">❤</label>  
+                            </fieldset>
+                        </div>
+                        <div class="tour-recomendation-box-detail">
+                            <h3>San Terra de Lafonte</h3>
+                            <p class="location">Kota Malang, Jawa Timur</p>
+                            <p class="description">Wisatawan dapat menikmati panorama aneka jenis bunga yang tentunya cocok digunakan sebagai latar foto ...</p>
+                            <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                                <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                    <img src="../../img/star.svg" style="height: 30px;">
+                                    <p class="rating">4.7 (91 Review)</p>
+                                </div>
+                                <a href="../tour-details-page/index.html" class="detail">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-recomendation-box">
+                        <img src="../../img/wisata2.svg">
+                        <div class="container-favorite">
+                            <fieldset>
+                                <input type="checkbox" id="like2" class="sr-only">
+                                <label for="like2" aria-hidden="true">❤</label>  
+                            </fieldset>
+                        </div>
+                        <div class="tour-recomendation-box-detail">
+                            <h3>Pantai Parang Dowo</h3>
+                            <p class="location">Kota Malang, Jawa Timur</p>
+                            <p class="description">Tempat wisata berupa pantai yang memiliki batu karang yang dapat berubah-ubah warnanya ...</p>
+                            <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                                <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                    <img src="../../img/star.svg" style="height: 30px;">
+                                    <p class="rating">4.7 (85 Review)</p>
+                                </div>
+                                <a href="#" class="detail">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-recomendation-box">
+                        <img src="../../img/wisata3.svg">
+                        <div class="container-favorite">
+                            <fieldset>
+                                <input type="checkbox" id="like3" class="sr-only">
+                                <label for="like3" aria-hidden="true">❤</label>  
+                            </fieldset>
+                        </div>
+                        <div class="tour-recomendation-box-detail">
+                            <h3>Malang Night Paradise</h3>
+                            <p class="location">Kota Malang, Jawa Timur</p>
+                            <p class="description">Terdapat beragam hiburan di tempat ini, antara lain yaitu Taman Dinosaurus, Taman Lampion, ...</p>
+                            <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                                <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                    <img src="../../img/star.svg" style="height: 30px;">
+                                    <p class="rating">4.7 (70 Review)</p>
+                                </div>
+                                <a href="#" class="detail">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-recomendation-box">
+                        <img src="../../img/wisata5.svg">
+                        <div class="container-favorite">
+                            <fieldset>
+                                <input type="checkbox" id="like5" class="sr-only">
+                                <label for="like5" aria-hidden="true">❤</label>  
+                            </fieldset>
+                        </div>
+                        <div class="tour-recomendation-box-detail">
+                            <h3>Wisata Alam Brakseng</h3>
+                            <p class="location">Kota Batu, Jawa Timur</p>
+                            <p class="description">Selain menawarkan tempat foto dengan latar Instagramable, di tempat ini pengunjung juga dapat bersantai ...</p>
+                            <div class="tour-recomendation-box-detail-bottom" style="display: flex;">
+                                <div class="tour-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                    <img src="../../img/star.svg" style="height: 30px;">
+                                    <p class="rating">4.8 (80 Review)</p>
+                                </div>
+                                <a href="#" class="detail">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="food-favourite">
+            <div class="recomendation-title">
+                <h1>Kuliner Favorit</h1>
+            </div>
+            <div class="wrapper">
+                <div class="food-destination-recomendation-box">
+                    <div class="food-recomendation-box">
+                        <img src="../../img/food1.svg">
+                        <div class="container-favorite">
+                            <fieldset>
+                                <input type="checkbox" id="like1" class="sr-only">
+                                <label for="like1" aria-hidden="true">❤</label>  
+                            </fieldset>
+                        </div>
+                        <div class="food-recomendation-box-detail">
+                            <h3>Pecel Kawi</h3>
+                            <p class="location">Kota Malang, Jawa Timur</p>
+                            <p class="description">Pecel Kawi buka pertama kali pada tahun 1975. Kedai ini terus menyajikan hidangan pecel yang autentik ...</p>
+                            <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                                <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                    <img src="../../img/star.svg" style="height: 30px;">
+                                    <p class="rating">4.6 (90 Review)</p>
+                                </div>
+                                <a href="../food-details-page/index.html" class="detail">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-recomendation-box">
+                        <img src="../../img/food4.svg">
+                        <div class="container-favorite">
+                            <fieldset>
+                                <input type="checkbox" id="like4" class="sr-only">
+                                <label for="like4" aria-hidden="true">❤</label>  
+                            </fieldset>
+                        </div>
+                        <div class="food-recomendation-box-detail">
+                            <h3>Sego Resek</h3>
+                            <p class="location">Kota Malang, Jawa Timur</p>
+                            <p class="description">Nasi ini berisi banyak isian seperti kecambah, kubis, daun bawang, dan juga topping nikmat lainnya ...</p>
+                            <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                                <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                    <img src="../../img/star.svg" style="height: 30px;">
+                                    <p class="rating">4.8 (80 Review)</p>
+                                </div>
+                                <a href="#" class="detail">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-recomendation-box">
+                        <img src="../../img/food5.svg">
+                        <div class="container-favorite">
+                            <fieldset>
+                                <input type="checkbox" id="like5" class="sr-only">
+                                <label for="like5" aria-hidden="true">❤</label>  
+                            </fieldset>
+                        </div>
+                        <div class="food-recomendation-box-detail">
+                            <h3>Rawon Nguling</h3>
+                            <p class="location">Kota Malang, Jawa Timur</p>
+                            <p class="description">Daging yang menjadi isian dari rawon ini memiliki tekstur yang empuk dan nikmat ...</p>
+                            <div class="food-recomendation-box-detail-bottom" style="display: flex;">
+                                <div class="food-recomendation-box-detail-bottom-rating" style="display: flex;">
+                                    <img src="../../img/star.svg" style="height: 30px;">
+                                    <p class="rating">4.7 (68 Review)</p>
+                                </div>
+                                <a href="#" class="detail">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer1">
+                <div class="foto_footer">
+                    <img class="logo-footer" src="../../img/jouwas-logo.png">
+                    <div class="logo_beautiful">
+                        <img class="beautiful1" src="../../img/Jouwas-beautiful1.png">
+                        <img class="beautiful2" src="../../img/Jouwas-beautiful2.png">
+                        <img class="beautiful3" src="../../img/Jouwas-beautiful3.png">
+                    </div>
+                </div>
+                <div class="box-information">
+                    <div class="box-information-detail-1">
+                        <h5>Perusahaan</h5>
+                        <ul>
+                            <li><a href="">Syarat & ketentuan</a></li>
+                            <li><a href="">Kebijakan privasi</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Bantuan pelayanan</a></li>
+                        </ul>
+                    </div>
+                    <div class="box-information-detail-2">
+                        <h5>Kontak</h5>
+                        <p>Jl. Cengger Ayam No. 16
+                            Kota Malang, Jawa Timur
+                            Indonesia</p>
+                        <p>(0341) 722 179</p>
+                        <p><a href="mailto:jouwas.022@gmail.com">jouwas.022@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <p>Copyright 2022 JOUWAS. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="../../script.js"></script>
+    </body>
+</body>
+</html>
