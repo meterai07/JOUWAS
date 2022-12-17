@@ -258,15 +258,14 @@ header ul li .user p:hover{
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
-    height: 100%;
     display: none;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11;
 }
 
 .pop-up {
-    top: 900px;
+    top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
     width: 720px;
@@ -275,11 +274,23 @@ header ul li .user p:hover{
     border-radius: 15px;
     color: black;
     display:none;
-    position:absolute;
+    position:inherit;
     animation: swipe-in;
     animation-duration: 0.5s;
+    z-index: 12;
 }
-
+.pop-up i{
+    font-size: 24px;
+    cursor: pointer;
+    color: grey;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.pop-up i:hover{
+    color: red;
+    transition: 0.5s;
+}
 .pop-up .pop-up-details {
     margin: 20px;
 }
