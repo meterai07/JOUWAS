@@ -110,6 +110,7 @@ function checked() {
   let psw = document.getElementById('psw');
   let notice = document.getElementById('notice');
   let button = document.getElementById('button-text');
+  let have = document.getElementById('have')
   if(button.value=="Login"){
       location.href = "../login/login.html";
   }
@@ -125,6 +126,8 @@ function checked() {
   else{
       notice.innerText = 'Sign Up Berhasil, Silahkan Login!';
       button.innerText = 'Login';
+      have.innerText = '.'
+      have.style.color = "white";
       button.value = "Login";
   }
 }
