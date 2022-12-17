@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
     <header>
@@ -100,25 +102,27 @@
                         <p>Reservasi</p>
                     </div>
                 </a>
-                <div class="overlay" onclick="off()"></div>
-                <div class="pop-up">
-                    <div class="image">
-                        <img src="../../img/overlay1.svg" alt="">
-                    </div>
-                    <div class="pop-up-details">
-                        <h1>Reservasi</h1>
-                        <form action="">
-                            <label for="name">Nama</label>
-                            <input id="name" type="text" placeholder="Masukkan namamu">
-                            <label for="date">Tanggal</label>
-                            <input id="date" type="datetime" placeholder="tanggal/bulan/tahun">
-                            <label for="count">Jumlah Orang</label>
-                            <input id="count" type="number" placeholder="Masukkan jumlah orang">
-                        </form>
-                        <p>Sisa tempat : <span>9 orang</span></p>
-                        <button class="reservation-button" onclick="off()">
-                            Reservasi
-                        </button>
+                <div class="overlay">
+                    <div class="pop-up">
+                        <i class="fa fa-times" aria-hidden="true" onclick="off()"></i>
+                        <div class="image">
+                            <img src="../../img/overlay1.svg" alt="">
+                        </div>
+                        <div class="pop-up-details">
+                            <h1>Reservasi</h1>
+                            <form action="">
+                                <label for="name">Nama</label>
+                                <input id="name" type="text" placeholder="Masukkan namamu">
+                                <label for="date">Tanggal</label>
+                                <input id="date" type="datetime" placeholder="tanggal/bulan/tahun">
+                                <label for="count">Jumlah Orang</label>
+                                <input id="count" type="number" placeholder="Masukkan jumlah orang">
+                            </form>
+                            <p>Sisa tempat : <span>9 orang</span></p>
+                            <button class="reservation-button" onclick="off()">
+                                Reservasi
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
