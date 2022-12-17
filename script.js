@@ -82,3 +82,10 @@ document.addEventListener("keydown", function(event) {
     off();
   }
 });
+
+
+// warning
+
+function warning() {
+  alert('Silahkan Login Terlebih Dahulu\nUntuk Melakukan Reservasi!');
+}
