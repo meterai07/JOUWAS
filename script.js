@@ -83,9 +83,48 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
-
 // warning
 
 function warning() {
   alert('Silahkan Login Terlebih Dahulu\nUntuk Melakukan Reservasi!');
+}
+
+// login success
+function success() {
+  let email = document.getElementById('email');
+  let psw = document.getElementById('password');
+  let notice = document.getElementById('notice');
+      if(email.value == 'darmaji' && psw.value == 'darmaji') {
+          location.href = "../Logged-In/index.html";
+      }
+      else{
+          notice.innerText = 'Masukkan email dan password yang benar!'
+      }
+}
+
+// sign up checked
+
+function checked() {
+  let username = document.getElementById('username');
+  let email = document.getElementById('email');
+  let psw = document.getElementById('psw');
+  let notice = document.getElementById('notice');
+  let button = document.getElementById('button-text');
+  if(button.value=="Login"){
+      location.href = "../login/login.html";
+  }
+  if(username.value == "") {
+      notice.innerText = 'Silahkan Masukkan Username';
+  }
+  else if(email.value == "") {
+      notice.innerText = 'Silahkan Masukkan Email';
+  }
+  else if(psw.value == "") {
+      notice.innerText = 'Silahkan Masukkan Password';
+  }
+  else{
+      notice.innerText = 'Sign Up Berhasil, Silahkan Login!';
+      button.innerText = 'Login';
+      button.value = "Login";
+  }
 }
