@@ -39,31 +39,6 @@
         <p>JOUWAS 2022</p>
     </footer>
     <img class="samping" src="../img/interior-shot-cafe-with-chairs-near-bar-with-wooden-tables.jpg">
-    <script>
-        let username = document.getElementById('username');
-        let email = document.getElementById('email');
-        let psw = document.getElementById('psw');
-        let notice = document.getElementById('notice');
-        let button = document.getElementById('button-text');
-        function checked() {
-            if(button.value=="Login"){
-                location.href = "../login/login.html";
-            }
-            if(username.value == "") {
-                notice.innerText = 'Silahkan Masukkan Username';
-            }
-            else if(email.value == "") {
-                notice.innerText = 'Silahkan Masukkan Email';
-            }
-            else if(psw.value == "") {
-                notice.innerText = 'Silahkan Masukkan Password';
-            }
-            else{
-                notice.innerText = 'Sign Up Berhasil, Silahkan Login!';
-                button.innerText = 'Login';
-                button.value = "Login";
-            }
-        }
-    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
