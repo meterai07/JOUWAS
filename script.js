@@ -77,10 +77,8 @@ function off() {
   });
 }
 
-$(document).on(
-  'keydown',
-  function(event) {
-    if(event.key == "Escape") {
-      off();
-    }
-  });
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    off();
+  }
+});
