@@ -19,18 +19,15 @@
         <h1>Selamat Datang</h1>
         <p>Silahkan isi detail identitasmu</p>
     </div>
-    <div class="textBox">
+    <form action="" class="textBox">
         <p>Email</p>
-        <input type="text" placeholder="Masukkan emailmu" name="email" required>
+        <input type="text" placeholder="Masukkan emailmu" name="email" id="email">
         <p>Password</p>
-        <input type="password" placeholder="Masukkan passwordmu" name="psw" required>
-    </div>
+        <input type="password" placeholder="Masukkan passwordmu" name="password" id="password">
+        <p id="notice" class="notice"></p>
+        <button type="button" id="btn-sign" class="buttonBox Masuk" onclick="success()"><p>Masuk</p></button>
+    </form>
     <div class="buttonBox">
-        <a href="../Logged-In/index.html" type="submit">
-            <div class="Masuk">
-                <p>Masuk</p>
-            </div>
-        </a>
         <a href="">
             <div class="withGoogle">
                 <img src="../img/Jouwas-logo_Google.png">
@@ -46,5 +43,18 @@
         <p>JOUWAS 2022</p>
     </footer>
     <img class="samping" src="../img/interior-shot-cafe-with-chairs-near-bar-with-wooden-tables.jpg">
+    <script>
+        let email = document.getElementById('email');
+        let psw = document.getElementById('password');
+        let notice = document.getElementById('notice');
+        function success() {
+            if(email.value == 'darmaji' && psw.value == 'darmaji') {
+                location.href = "../Logged-In/index.html";
+            }
+            else{
+                notice.innerText = 'Masukkan email dan password yang benar!'
+            }
+        }
+    </script>
 </body>
 </html>
