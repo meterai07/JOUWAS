@@ -91,15 +91,15 @@ function warning() {
 
 // login success
 function success() {
-  let email = document.getElementById('email');
-  let psw = document.getElementById('password');
-  let notice = document.getElementById('notice');
-      if(email.value == 'darmaji' && psw.value == 'darmaji') {
-          location.href = "../Logged-In/index.html";
-      }
-      else{
-          notice.innerText = 'Masukkan email dan password yang benar!'
-      }
+  const email = document.getElementById('email');
+  const psw = document.getElementById('password');
+  const notice = document.getElementById('notice');
+
+  if (email.value === 'darmaji' && psw.value === 'darmaji') {
+    location.href = "../Logged-In/index.html";
+  } else {
+    notice.innerText = 'Masukkan email dan password yang benar!'
+  }
 }
 
 // sign up checked
