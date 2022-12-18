@@ -1,14 +1,18 @@
 // automatically hide navbar on scroll down and show on scroll up
 let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+  const currentScrollPos = window.pageYOffset;
+  const navbar = document.getElementById("navbar");
+
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+    navbar.style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-100px";
+    navbar.style.top = "-100px";
   }
+
   prevScrollpos = currentScrollPos;
-}
+});
 
 // carousel
 
@@ -57,8 +61,10 @@ carousels.forEach(carousel => {
 })
 
 // overlay
+const elements = document.querySelectorAll(".overlay, .pop-up");
+
 function on() {
-  document.querySelectorAll(".overlay, .pop-up").forEach(el => {
+  elements.forEach(el => {
     el.style.display = "flex";
     if (el.classList.contains("pop-up")){
       el.style.animation = "swipe-in 0.5s";
@@ -67,7 +73,7 @@ function on() {
 }
 
 function off() {
-  document.querySelectorAll(".overlay, .pop-up").forEach(el => {
+  elements.forEach(el => {
     if (el.classList.contains("pop-up")){
       el.style.animation = "swipe-out 0.6s";
     }
