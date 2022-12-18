@@ -15,7 +15,6 @@ window.addEventListener('scroll', () => {
 });
 
 // carousel
-
 const carousels = document.querySelectorAll(".destination-recomendation-box, .tour-destination-recomendation-box, .food-destination-recomendation-box");
 
 carousels.forEach(carousel => {
@@ -90,7 +89,6 @@ document.addEventListener("keydown", function(event) {
 });
 
 // warning
-
 function warning() {
   alert('Silahkan Login Terlebih Dahulu\nUntuk Melakukan Reservasi!');
 }
@@ -109,7 +107,6 @@ function success() {
 }
 
 // sign up checked
-
 function checked() {
   let username = document.getElementById('username');
   let email = document.getElementById('email');
@@ -139,7 +136,6 @@ function checked() {
 }
 
 // reservation
-
 function reservationChecked() {
   const name = document.getElementById('name');
   const date = document.getElementById('date');
