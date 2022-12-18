@@ -131,3 +131,31 @@ function checked() {
       button.value = "Login";
   }
 }
+
+// reservation
+
+function reservationChecked() {
+  let name = document.getElementById('name');
+  let date = document.getElementById('date');
+  let count = document.getElementById('count');
+  let countNumber = document.getElementById('countNumber');
+  countNumber.value = 9;
+  let notice = document.getElementById('notice');
+  if(name.value == "") {
+      notice.innerText = 'Silahkan Masukkan Nama Anda';
+  }
+  else if(date.value == "") {
+      notice.innerText = 'Silahkan Masukkan Tanggal Reservasi';
+  }
+  else if(count.value == "") {
+      notice.innerText = 'Silahkan Masukkan Jumlah Orang';
+  }
+  else if(count.value<=0 || count.value>=countNumber.value+1) {
+    notice.innerText = 'Silahkan Masukkan Jumlah Orang yang Sesuai';
+  }
+  else{
+    countNumber.value-=count.value;
+    alert('Reservasi Berhasil!');
+    off();
+  }
+}
