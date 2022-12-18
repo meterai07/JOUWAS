@@ -309,6 +309,13 @@ header ul li .user p:hover{
     flex-direction: column;
     margin-top: 30px;
     gap: 10px;
+    position: relative;
+}
+.pop-up-details form .notice{
+    position: absolute;
+    color: red;
+    margin-left: 10px;
+    margin-top: 265px;
 }
 
 .pop-up-details form label {
