@@ -110,51 +110,48 @@ function checked() {
   let psw = document.getElementById('psw');
   let notice = document.getElementById('notice');
   let button = document.getElementById('button-text');
-  let have = document.getElementById('have')
-  if(button.value=="Login"){
-      location.href = "../login/login.html";
+  let have = document.getElementById('have');
+
+  if (button.value === "Login") {
+    location.href = "../login/login.html";
+    return;
   }
-  if(username.value == "") {
-      notice.innerText = 'Silahkan Masukkan Username';
-  }
-  else if(email.value == "") {
-      notice.innerText = 'Silahkan Masukkan Email';
-  }
-  else if(psw.value == "") {
-      notice.innerText = 'Silahkan Masukkan Password';
-  }
-  else{
-      notice.innerText = 'Sign Up Berhasil, Silahkan Login!';
-      button.innerText = 'Login';
-      have.innerText = '.'
-      have.style.color = "white";
-      button.value = "Login";
+
+  if (!username.value) {
+    notice.innerText = 'Silahkan Masukkan Username';
+  } else if (!email.value) {
+    notice.innerText = 'Silahkan Masukkan Email';
+  } else if (!psw.value) {
+    notice.innerText = 'Silahkan Masukkan Password';
+  } else {
+    notice.innerText = 'Sign Up Berhasil, Silahkan Login!';
+    button.innerText = 'Login';
+    have.innerText = '.';
+    have.style.color = "white";
+    button.value = "Login";
   }
 }
 
 // reservation
 
 function reservationChecked() {
-  let name = document.getElementById('name');
-  let date = document.getElementById('date');
-  let count = document.getElementById('count');
-  let countNumber = document.getElementById('countNumber');
+  const name = document.getElementById('name');
+  const date = document.getElementById('date');
+  const count = document.getElementById('count');
+  const countNumber = document.getElementById('countNumber');
   countNumber.value = 9;
-  let notice = document.getElementById('notice');
-  if(name.value == "") {
-      notice.innerText = 'Silahkan Masukkan Nama Anda';
-  }
-  else if(date.value == "") {
-      notice.innerText = 'Silahkan Masukkan Tanggal Reservasi';
-  }
-  else if(count.value == "") {
-      notice.innerText = 'Silahkan Masukkan Jumlah Orang';
-  }
-  else if(count.value<=0 || count.value>=countNumber.value+1) {
+  const notice = document.getElementById('notice');
+
+  if (!name.value) {
+    notice.innerText = 'Silahkan Masukkan Nama Anda';
+  } else if (!date.value) {
+    notice.innerText = 'Silahkan Masukkan Tanggal Reservasi';
+  } else if (!count.value) {
+    notice.innerText = 'Silahkan Masukkan Jumlah Orang';
+  } else if (count.value <= 0 || count.value >= countNumber.value + 1) {
     notice.innerText = 'Silahkan Masukkan Jumlah Orang yang Sesuai';
-  }
-  else{
-    countNumber.value-=count.value;
+  } else {
+    countNumber.value -= count.value;
     alert('Reservasi Berhasil!');
     off();
   }
